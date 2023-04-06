@@ -21,7 +21,7 @@ def taille(P):
 def NPI(P):
     assert type(P)==list,'P doit être une liste'
     assert type(P[0])==int or type(P[0])==float, 'Le premier terme de votre liste doit être de type int ou float'
-    assert type(P[1])==int or type(P[1])==float or type(P[1])=='v', 'Le deuxième terme de votre liste doit être de type int ou float'
+    assert type(P[1])==int or type(P[1])==float or type(P[1])=='v', 'Le deuxième terme de votre liste doit être de type int, float ou être v qui signifie racine carré'
     assert type(P[-1])==str,'Le dernier terme de votre liste doit être un opérateur de type str'
     pile=[]
     for i in range(len(P)):
